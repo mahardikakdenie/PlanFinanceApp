@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  
+  --color-natural-bg: #FAF9F6;
+  --color-natural-text: #3D3D3D;
+  --color-natural-primary: #5A5A40;
+  --color-natural-secondary: #A0A080;
+  --color-natural-muted: #8A8A7A;
+  --color-natural-border: #EBEBE0;
+  --color-natural-accent: #D97706;
+  --color-natural-sage: #8A9A5B;
+  --color-natural-dark: #424230;
+  --color-natural-light: #E5E5D8;
+}
+
+body {
+  background-color: var(--color-natural-bg);
+  color: var(--color-natural-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar for a more app-like feel */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
